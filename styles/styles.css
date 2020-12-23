@@ -4,3 +4,15 @@
 .cl-teal {
 	color: #53F6C7 !important;
 }
+.nav-linkC:hover {
+	background-color: #53F6C7;
+	color: black;
+}
+.currentPage {
+	background-color: #53F6C7;
+	color: black !important;
+}
+.nav-linkC {
+	font-size: 1.3em;
+	color: white;
+}
