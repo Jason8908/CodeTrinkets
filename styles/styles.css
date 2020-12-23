@@ -1,7 +1,6 @@
-body {
-	background-color: #1d1b24;
-	font-family: 'Open Sans', sans-serif;
-    color: #d8d5d5;
-    font-size: 14px;
-    font-weight: 300;
+.cl-white {
+	color: white !important;
+}
+.cl-teal {
+	color: #53F6C7 !important;
 }
