@@ -46,14 +46,16 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #1d1b24;
+  background: linear-gradient(to right, #1d1b24 70%, #2A2931 30%);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -62,10 +64,10 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: white;
   background-color: currentColor;
   border: 0;
-  opacity: 0.25;
+  opacity: 1;
 }
 
 hr:not([size]) {
@@ -460,7 +462,6 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -481,8 +482,7 @@ progress {
 }
 
 .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
+  font-size: calc(1.625rem + 4.5vw);
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -4157,14 +4157,30 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 1px solid #55545A;
+  border-width: 1px;
 }
 .card > hr {
   margin-right: 0;
   margin-left: 0;
+}
+.card::after,
+.card::before {
+  background-color: #1d1b24;
+  content: "";
+  display: block;
+  height: 25px;
+  position: absolute;
+  width: 25px;
+}
+.card::after {
+  bottom: -2px;
+  right: -2px;
+}
+.card::before {
+  top: -2px;
+  left: -2px;
 }
 .card > .list-group {
   border-top: inherit;
@@ -7221,7 +7237,11 @@ textarea.form-control-lg {
 }
 
 .bg-dark {
-  background-color: #1d1b24 !important;
+  background: linear-gradient(to right, #1d1b24 70%, #2A2931 30%) !important;
+}
+
+.bg-black {
+  background-color: black !important;
 }
 
 .bg-body {

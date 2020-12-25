@@ -4,12 +4,13 @@
 		<title>Code Trinkets</title>
 		<link rel="stylesheet" type="text/css" href="./styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
-		<link rel="icon" type="image/png" href="./images/logo.png">
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="./javascript/code.js"></script>
 		<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-md bg-dark">
+		<!-- Header Nav Bar -->
+		<nav class="navbar navbar-expand-md bg-dark" id="mainNav">
 			<span class="navbar-text" style="margin-right: 1%"></span>
 			<a class="navbar-brand" href="#">
 				<img src="./images/logo.png" width="105" height="95" class="d-inline-block align-top" alt="">
@@ -18,20 +19,122 @@
 				<h2 class="cl-teal"><b>Code</b> <span class="cl-white"><br>Trinkets</span></h2>
 			</span>
 			<!-- Actual Bar -->
-			<ul class="nav justify-content-end" style="margin-right: 4%; margin-left: auto">
-				<li class="nav-linkC currentPage">
-					<a class="nav-link" href="./index.html">Home</a>
+			<ul class="nav justify-content-end" style="margin-right: 4%; margin-left: auto; font-size: 0.8em;">
+				<li class="nav-linkC currentPage homeLi" id="homeLi">
+					<a class="nav-link" href="#home"><b>Home</b></a>
 				</li>
-				<li class="nav-linkC">
-					<a class="nav-link" href="#about">About Us</a>
+				<li class="nav-linkC aboutLi" id="aboutLi">
+					<a class="nav-link" href="#about"><b>About Us</b></a>
 				</li>
-				<li class="nav-linkC">
-					<a class="nav-link" href="#projects">Projects</a>
+				<li class="nav-linkC projectsLi" id="projectsLi">
+					<a class="nav-link" href="#projects"><b>Projects</b></a>
 				</li>
-				<li class="nav-linkC">
-					<a class="nav-link" href="#contact">Contact</a>
+				<li class="nav-linkC contactLi" id="contactLi">
+					<a class="nav-link" href="#contact"><b>Contact</b></a>
 				</li>
 			</ul>
 		</nav>
+		<!-- End of Header Nav -->
+		<!-- Hidden Nav Bar -->
+		<nav class="navbar navbar-expand-md bg-black fixed-top" id="hiddenNav">
+			<span class="navbar-text" style="margin-right: 1%"></span>
+			<a class="navbar-brand" href="#">
+				<img src="./images/logo.png" width="55" height="50" class="d-inline-block align-top" alt="" style="margin-top: -20%">
+			</a>
+			<span class="navbar-text" width="5px">
+				<h2 class="cl-teal" style="font-size: 1.3em"><b>Code</b> <span class="cl-white"><br>Trinkets</span></h2>
+			</span>
+			<!-- Actual Bar -->
+			<ul class="nav justify-content-end" style="margin-right: 4%; margin-left: auto; font-size: 0.8em;">
+				<li class="nav-linkC currentPage homeLi" id="homeLi">
+					<a class="nav-link" href="#home"><b>Home</b></a>
+				</li>
+				<li class="nav-linkC aboutLi" id="aboutLi">
+					<a class="nav-link" href="#about"><b>About Us</b></a>
+				</li>
+				<li class="nav-linkC projectsLi" id="projectsLi">
+					<a class="nav-link" href="#projects"><b>Projects</b></a>
+				</li>
+				<li class="nav-linkC contactLi" id="contactLi">
+					<a class="nav-link" href="#contact"><b>Contact</b></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- End of Hidden Nav -->
+		<!-- Main body -->
+		<div class="outside-wrapper" id="home">
+			<div class="wrapper">
+				<div class="cl-white" style="float:left; width: 37%;">
+					<h1 class="display-1 cl-white">Applications made <br><span class="cl-teal">by the People,</span> For <br>the People</h1>
+					<br>
+					<p class="paragraph">
+						Code Trinkets is the name of a group of highschool programmers who create different applications and fun games! This group is currently comprised of two eager teenagers attemping to make an impact in the world and have fun doing it! Explore the different projects we have made and try out some of out best games! Take your time, and enjoy the visit.
+					</p>
+				</div>
+				<img class="lensImg" src="./images/lens.jpg">
+			</div>
+		</div>
+		<br>
+		<br>
+		<div id="about" class="about">
+			<h1 class="cl-grey back-head"><b>About Us</b></h1>
+			<hr class="aboutHR">
+			<br>
+			<!-- Beginning of About -->
+			<div class="row" style="margin-left: 8%; overflow-y: hidden; max-height: 540px;">
+
+			    <!--Card 1-->
+			    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4" id="card1">
+					<!--Card-->
+					<div class="card">
+						<div class="card-up info-color"></div>
+						<div class="avatar mx-auto">
+		          			<img src="./images/jason.png" class="rounded-circle img-fluid">
+		        		</div>
+		       			<div class="card-body">
+		          			<h4 class="font-weight-bold mb-4" style="color: white;">Jason Su</h4>
+		          			<hr>
+			          		<p class="dark-grey-text mt-4" style="color: white;">
+				          		Jason is one of the co-founders of Code Trinkets and he is an ambitious programmer, always looking for new ways to work with
+				          		code in order to provide a better experience for both the user and the person creating the application. He is currently a high
+				          		school student taking his grade 12 courses in Ontario. Some of his pastimes include playing video games, reading, and of course,
+				          		coding. With over 3 years of experience using Javascipt, around 6 months of C++, and some months with Java, Jason is a proficient
+				          		programmer and engineer at heart.
+				        	</p>
+		        		</div>
+		      		</div>
+		      		<br>
+		      	<!-- End of Card -->
+				</div>
+
+				<!-- Card 2 -->
+				<div class="col-lg-4 col-md-12 mb-lg-0 mb-4" id="card2">
+					<!--Card-->
+					<div class="card">
+						<div class="card-up info-color"></div>
+						<div class="avatar mx-auto">
+		          			<img src="./images/tarun.png" class="rounded-circle img-fluid">
+		        		</div>
+		       			<div class="card-body">
+		          			<h4 class="font-weight-bold mb-4" style="color: white;">Tarun Haridasan</h4>
+		          			<hr>
+			          		<p class="dark-grey-text mt-4" style="color: white;">
+				          		Tarun is one of the co-founders of Code Trinkets he is also a vigourous and fast learner, picking up programming languages
+				          		by the handful. Tarun is a very high-achieving high school Student in Ontario, harbouring a 99% average, which is especially 
+				          		difficult in the 12-U level courses that he is taking this year. With multiple years of experience writing Javascript, Java, 
+				          		C++, Tarun contributes to Code Trinkets greatly and he is an integral part of the team. 
+				        	</p>
+				        	<br>
+		        		</div>
+		      		</div>
+		      		<br>
+		      	<!-- End of Card -->
+				</div>
+			</div>
+			<!-- End of About -->
+		</div>
+		<footer class="footer">
+			<p class="copyright">© Copyright <a href="https://www.codetrinkets.ca" class="trinkets">Jason Su & Tarun Haridasan</a></p>
+		</footer>
 	</body>
 </html>

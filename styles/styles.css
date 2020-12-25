@@ -4,6 +4,9 @@
 .cl-teal {
 	color: #53F6C7 !important;
 }
+.cl-grey {
+	color: #2A2931 !important;
+}
 .nav-linkC:hover {
 	background-color: #53F6C7;
 	color: black;
@@ -15,4 +18,79 @@
 .nav-linkC {
 	font-size: 1.3em;
 	color: white;
+}
+.wrapper {
+	transition-property: margin-left;
+  	transition-duration: 1.75s;
+	margin-top: 3%;
+	margin-left: 45%;
+	margin-right: auto;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 5%;
+}
+.lensImg {
+	margin-left: 3%;
+	display: inline-block;
+	height: 40em;
+	width: 35em;
+	box-shadow: 33px 25px 0px -3px #1d1b24;
+}
+.paragraph {
+	font-size: 1.35em;
+	font-weight: 300;
+}
+.about {
+	background-color: #1D1B24;
+	width:100%;
+}
+.back-head {
+	font-size: 8em;
+	margin-left: 6%;
+	cursor: default;
+	margin-bottom: 0 !important;
+}
+.aboutHR {
+	color: #2A2931;
+	width: 32%;
+	height: 2.5px !important;
+	margin-left: 6%;
+	margin-top: 0%;
+	margin-bottom: 0 !important;
+}
+.footer {
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    background-color: #1d1b24;
+    border-top-style: solid;
+    border-color: #55545A;
+    border-width: 0.5px;
+}
+.copyright {
+	color: white;
+	font-size: 14px;
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-left: 13%;
+}
+.trinkets:hover {
+	color: #53F6C7;
+}
+#card1 {
+	transition: ease;
+	transition-duration: 1s;
+	margin-top: 5%;
+	opacity: 0;
+}
+#card2 {
+	transition: ease;
+	transition-duration: 1s;
+	margin-top: 5%;
+	opacity: 0;
+}
+#hiddenNav {
+	margin-top: -5%;
+	transition: ease;
+	transition-duration: 0.5s;
 }
